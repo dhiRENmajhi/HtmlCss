@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    --fruitr: 20px;
+    --containermargin: 10px;
+}
+
+.fruits{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: var(--containermargin);
+    border: 2px solid black;
+    border-radius: var(--fruitr);
+}
+#apple{
+    background-image: url(apple.png) ;
+    background-position: center;
+    color: red;
+}
+#mango{
+    background-image: url(mango.png) ;
+    background-position: center;
+    color: rgb(27, 206, 27);
+}
+#orange{
+    background-image: url(orange.png) ;
+    background-position: center;
+    color: orange;
+}
+h1{
+    font-size: 75px;
+    background-color: white;
+    border-radius: var(--fruitr) var(--fruitr) 0px 0px; 
+    width: 100%;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+p{
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.container{
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: calc(var(--fruitr) + var(--containermargin));
+    background-color: rgb(0, 0, 0);
+}

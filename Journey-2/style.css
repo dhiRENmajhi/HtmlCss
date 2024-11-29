@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fruits{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 4px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+h1{
+    font-weight: bolder;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+p{
+    font-weight:lighter;
+    font-size: 20px;
+}
+
+#apple{
+    background-color: red;
+    
+}
+
+#mango{
+    background-color: green;
+}
+
+#orange{
+    background-color: orange;
+}
