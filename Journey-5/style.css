@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    --marginall: 10px;
+    --borderall: 2px;
+    --borderradius: 20px;
+}
+.navbar
+{
+    display: inline;
+    padding: 0px 20px 0px 20px;
+    text-decoration: underline var(--borderall) black;
+}
+nav{
+    text-align: center;
+    padding: 20px;
+    border: var(--borderall) solid black;
+    border-radius: var(--borderradius);
+    margin: var(--marginall);
+}
+.left{
+    display: inline-block;
+    background-color: red;
+    background-image: url(apple.png);
+    background-position: center;
+    margin: var(--marginall);
+    width: calc(50% - calc(calc(2 * var(--borderall)) + calc(2 * var(--marginall))));
+    text-align: center;
+    border: var(--borderall) solid black;
+    border-radius: var(--borderradius);
+}
+.right{
+    display: inline-block;
+    background-color: yellow;
+    background-image: url(mango.png);
+    background-position: center;
+    margin: var(--marginall);
+    width: calc(50% - calc(calc(2 * var(--borderall)) + calc(2 * var(--marginall))));
+    text-align: center;
+    border: var(--borderall) solid black;
+    border-radius: var(--borderradius);
+}
+.orange{
+    background-color: orange;
+    background-image: url(orange.png);
+    background-position: center;
+    margin: var(--marginall);
+    text-align: center;
+    border: var(--borderall) solid black;
+    border-radius: var(--borderradius);
+}
+h1{
+    color: white;
+    padding: 100px;
+    font-size: 75px;
+}

@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #fcfcbe;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10vw 10px 10vw;
+    background-color: #fcfcbe80;
+    backdrop-filter: blur(10px);
+}
+nav ul li{
+    display: inline;
+    padding-left: 30px;
+}
+nav ul li a{
+    color: #2e2a21;
+    padding: 2px 10px 2px 10px;
+    border: 1px solid #2e2a21;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+nav #active{
+    background-color: #2e2a21;
+    color: #40bf40;
+}
+nav img{
+    height: 30px;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10vw 10px 10vw;
+    height: 80vh;
+}
+.text h1{
+    font-size: 2.5rem;
+    color: #2e2a21;
+}
+.text ul li{
+    padding-top: 20px;
+    display: inline-block;
+    padding-right: 20px;
+}
+.text ul li a{
+    color: #2e2a21;
+    padding: 2px 20px 2px 20px;
+    border: 1px solid #2e2a21;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+.text #active{
+    background-color: #2e2a21;
+    color: #40bf40;
+}
+.longcard{
+    background-color: #40bf40;
+    margin: 0px 10vw 5vw 10vw;
+    border-radius: 20px;
+}
+.longcard .top{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2a21;
+    border-radius: 20px;
+}
+.longcard .top img{
+    border-radius: 0px 20px 20px 0px;
+}
+.longcard .top .topleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.longcard .top .topleft h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.longcard .top .topleft .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-block-start: 1px solid white;
+}
+.longcard .top .topleft .author h3{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.longcard .top .topleft .author p{
+    color: white;
+    font-size: 1.5rem;
+}
+.longcard .paragraph{
+    padding: 30px;
+    color: #fcfcbe;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.selector{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10vw 5vw 10vw;
+}
+.selector .shortcard{
+    width: 18vw;
+    border-radius: 20px;
+    background-color: #2e2a21;
+}
+.selector .shortcard img{
+    width: 18vw;
+    border-radius: 20px;
+}
+.selector .shortcard .titleparagraph{
+    padding: 20px;
+}
+.selector .shortcard .titleparagraph h3{
+    color: #40bf40;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    border-block-end: 1px solid #40bf40;
+}
+.selector .shortcard .titleparagraph .smallcontent{
+    color: white;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10vw 0 10vw;
+}
+footer .menu{
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fba02b;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+footer .copyright div h2{
+    color: #2e2a21;
+    font-size: 2rem;
+    font-weight: 300;
+}
+footer .copyright div h3{
+    color: #2e2a21;
+    font-size: 4rem;
+    font-weight: 500;
+}
+footer .copyright div p{
+    color: #2e2a21;
+    font-size: 1.5rem;
+}
+
+
+
+footer .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2e2a21;
+    font-size: 1.5rem;
+}
+footer .social li{
+    display: flex;
+    align-items: center;
+}
+footer .social .socialLogo{
+    height: 1.5rem;
+}
+footer .menu .row h3{
+    color: #40bf40;
+    font-size: 1.5rem;
+    border-block-end: 1px solid #40bf40;
+    text-transform: uppercase;
+}
+footer .menu .row ul li{
+    padding-top: 5px;
+    color: #2e2a21;
+    font-size: 1rem;
+}
+footer .menu .row .productsLink li{
+    color: #fba02b;
+}
