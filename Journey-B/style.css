@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 20vw;
+}
+.movingtext h1{
+    display: inline;
+    color: green;
+}
+.movingtext .hollow{
+    -webkit-text-stroke: 0.02rem green;
+    color: white;
+}
+.movingtext{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    position: absolute;
+    top: -10vh;
+    left: 2vw;
+    transform: scale(5) translateX(24px);
+    animation: textscroll 4s linear 0s infinite;
+}
+#reverse{
+    transform: scale(5) translateX(24px);
+    animation: textscroll 4s linear 0s infinite reverse;
+}
+@keyframes textscroll {
+    from{
+        transform: scale(5) translateX(100px);
+    } 
+    to{
+        transform: scale(5) translateX(-46px);
+    }   
+}
+.container{
+    background-color: rgb(208, 255, 138);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20vh;
+    border: 2px solid green;
+}
+
+.flower{
+    position: relative;
+}
+.stem{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(-2deg);
+    transform-origin: 50% 0%;
+    animation: stem 3s ease-in-out 0s infinite alternate-reverse;
+}
+@keyframes stem {
+    from{
+        transform: rotate(-2deg);
+    }
+    to{
+        transform: rotate(2deg);
+    }   
+}
+#leaf1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(45deg) translateX(-5px) translateY(5px);
+    transform-origin: top right;
+    animation: leaf1 8s linear 0s infinite;
+}
+
+#leaf2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(135deg) translateX(5px) translateY(5px);
+    transform-origin: top right;
+    animation: leaf2 8s linear 0s infinite;
+}
+#leaf3{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(225deg) translateX(5px) translateY(-5px);
+    transform-origin: top right;
+    animation: leaf3 8s linear 0s infinite;
+}
+#leaf4{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transform: rotate(315deg) translateX(-5px) translateY(-5px);
+    transform-origin: top right;
+    animation: leaf4 8s linear 0s infinite;
+}
+.container h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: green;
+    font-size: 3rem;
+    border-block-end: 2px solid green;
+    padding-bottom: 20px;
+    margin-right: 20px;
+}
+.container p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
+    margin-right: 20px;
+}
+@keyframes leaf1 {
+    from{
+        transform: rotate(45deg) translateX(-5px) translateY(5px);
+    }
+    to{
+        transform: rotate(135deg) translateX(5px) translateY(5px);
+    }   
+}
+@keyframes leaf2 {
+    from{
+        transform: rotate(135deg) translateX(5px) translateY(5px);
+    }
+    to{
+        transform: rotate(225deg) translateX(5px) translateY(-5px);
+    }   
+}
+@keyframes leaf3 {
+    from{
+        transform: rotate(225deg) translateX(5px) translateY(-5px);
+    }
+    to{
+        transform: rotate(315deg) translateX(-5px) translateY(-5px);
+    }   
+}
+@keyframes leaf4 {
+    from{
+        transform: rotate(315deg) translateX(-5px) translateY(-5px);
+    }
+    to{
+        transform: rotate(405deg) translateX(-5px) translateY(5px);
+    }   
+}

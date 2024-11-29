@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+    background-color: white;
+}
+.card img{
+    width: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
+.card .description{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 20px);
+    padding: 10px;
+}
+.card .description .title{
+    padding-bottom: 10px;
+}
+.card .description .reviews{
+    width: 100%;
+    display: flex;
+    padding-bottom: 5px;
+}
+.card .description .reviews .star{
+    display: flex;
+}
+.card .description .reviews .star img{
+    width: 15px;
+}
+.card .description .reviews .dropdown{
+    width: 20px;
+}
+.card .description .reviews .numberofReviews{
+    color: rgb(0, 157, 255);
+}
+.card .description .satesno{
+    padding-bottom: 5px;
+    width: 100%;
+    color: rgb(103, 103, 103);
+}
+.card .description .price{
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: end;
+}
+.card .description .price .discountedPrice{
+    display: flex;
+    align-items: flex-start;
+}
+.card .description .price .discountedPrice img{
+    width: 15px;
+}
+.card .description .price .discountedPrice p{
+    font-size: 30px;
+}
+.card .description .price .mrp{
+    display: flex;
+    align-items: center;
+    color: rgb(103, 103, 103);
+}
+.card .description .cta{
+    width: fit-content;
+    font-size: 0.7rem;
+    background-color: rgb(255, 213, 0);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 300;
+}

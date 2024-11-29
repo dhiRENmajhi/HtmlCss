@@ -1,0 +1,282 @@
+*{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Versace;
+    src: url("radiant/OPTIRadiant-Medium.otf");
+}
+
+
+
+
+
+
+
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+header nav{
+    padding: 20px 30px 10px 30px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.417);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header nav ul{
+    display: flex;
+}
+header .category li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-right: 15px;
+    color: white;
+}
+header .icons li img{
+    width: 1rem;
+    padding-left: 20px;
+}
+header nav .logo{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: Versace, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+.hero img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.hero .pf2024{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 12vh;
+    left: 5vw;
+}
+.hero .pf2024 div{
+    display: flex;
+}
+.hero .pf2024 h2{
+    font-family: Versace, sans-serif;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 20px;
+}
+.hero .pf2024 div h3{
+    padding: 10px 50px 10px 50px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin: 1px;
+}
+
+
+
+
+
+
+
+
+
+.newin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+.newin h1{
+    font-family: Versace, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.whatsnew{
+    display: flex;
+}
+.whatsnew .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+.whatsnew .box img{
+    width: 10rem;
+    border-radius: 10rem;
+    padding-bottom: 5px;
+}
+.whatsnew .box h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    text-decoration: 2px underline;
+}
+
+
+
+
+
+
+
+
+
+.womens{
+    display: flex;
+    height: 100vh;
+}
+.womens h2{
+    font-family: Versace, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.womens h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 10px 70px 10px 70px;
+    display: inline;
+}
+.womens .womensbag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("herleft.png");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+}
+.womens .womensclothing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("herright.png");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+}
+.womencta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+.highlighted{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+.highlights{
+    width: calc(100vw - 100px);
+    padding: 50px 10px 50px 10px;
+}
+.highlights .big{
+    display: flex;
+}
+.highlights .big img{
+    height: 415px;
+}
+.highlights .slider{
+    display: flex;
+}
+.highlights .slider .small{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+}
+.highlights .slider .small img{
+    height: 375px;
+}
+.highlights .slider .small .nameprice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.55rem;
+    padding-top: 10px;
+    height: 30px;
+    align-items: center;
+}
+.highlights .slider{
+    height: 60vh;
+}
+
+
+
+
+
+
+
+
+
+
+.mens{
+    display: flex;
+    height: 100vh;
+}
+.mens h2{
+    font-family: Versace, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+.mens h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    padding: 10px 70px 10px 70px;
+    display: inline;
+}
+.mens .mensclothing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("himleft.png");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+}
+.mens .mensdenim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("himright.png");
+    background-size: cover;
+    background-position: center;
+    width: 50vw;
+}
+.mencta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

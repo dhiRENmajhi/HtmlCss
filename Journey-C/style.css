@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #fcfcbe;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10vw 10px 10vw;
+    background-color: #fcfcbe80;
+    backdrop-filter: blur(10px);
+}
+nav ul li{
+    display: inline;
+    padding-left: 30px;
+}
+nav ul li a{
+    color: #2e2a21;
+    padding: 2px 10px 2px 10px;
+    border: 1px solid #2e2a21;
+    border-radius: 20px;
+    font-size: .8rem;
+}
+nav #active{
+    background-color: #2e2a21;
+    color: #40bf40;
+}
+nav img{
+    height: 30px;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+.bento{
+    padding: 10px calc(10vw - 10px) 10px calc(10vw - 10px);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 40% 40% 20%;
+    height: 90vh;
+}
+.bento .box{
+    background-color: red;
+    border-radius: 20px;
+    margin: 10px;
+    transition-duration: .2s;
+}
+.bento .box:hover{
+    transform: scale(1.03);
+}
+
+#box1{
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    background-color: #fba02b;
+    background-image: url(apple.png);
+    background-position: center;
+    background-size: cover;
+    animation: imgchange 3s cubic-bezier(1, 0, 0, 1) 0s infinite alternate;
+}
+@keyframes imgchange {
+    from{
+        background-image: url(apple.png);
+    }
+    to{
+        background-image: url(bell\ pepper.png);
+    }
+}
+
+
+#box2{
+    grid-column: 3/ span 1;
+    grid-row: 1/ span 1;
+    background-color: #fba02b;
+    background-image: url(onion.png);
+    background-position: center;
+    background-size: cover;
+}
+#box3{
+    grid-column: 4/ span 1;
+    grid-row: 1/ span 1;
+    background-color: #fba02b;
+    background-image: url(blueberry.png);
+    background-position: center;
+    background-size: cover;
+}
+#box4{
+    grid-column: 5/ span 1;
+    grid-row: 1/ span 2;
+    background-color: #fba02b;
+    background-image: url(pineapple.png);
+    background-position: center;
+    background-size: cover;
+}
+#box5{
+    grid-column: 3/ span 1;
+    grid-row: 2/ span 1;
+    background-color: #fba02b;
+    background-image: url(broccoli.png);
+    background-position: center;
+    background-size: cover;
+}
+#box6{
+    grid-column: 4/ span 1;
+    grid-row: 2/ span 1;
+    background-color: #fba02b;
+    background-image: url(guava.png);
+    background-position: center;
+    background-size: cover;
+}
+#box7{
+    grid-column: 1/ span 5;
+    grid-row: 3/ span 1;
+    background-color: #2e2a21;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#box7 h1{
+    font-size: 1rem;
+    color: #40bf40;
+    transform: scale(3) translateX(-27px);
+    animation: scrolltext 6s linear 0s infinite forwards;
+}
+@keyframes scrolltext {
+    from{
+        transform: scale(3) translate(300px);
+    }
+    to{
+        transform: scale(3) translate(-26px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 10vw 0 10vw;
+}
+footer .menu{
+    display: flex;
+    justify-content: space-between;
+}
+footer .copyright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fba02b;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+footer .copyright img{
+    transform: rotateY(0deg);
+    animation: logorotate 2s cubic-bezier(.92,-0.02,.15,1) 0s infinite forwards;
+}
+@keyframes logorotate {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+    
+}
+footer .copyright div h2{
+    color: #2e2a21;
+    font-size: 2rem;
+    font-weight: 300;
+}
+footer .copyright div h3{
+    color: #2e2a21;
+    font-size: 4rem;
+    font-weight: 500;
+}
+footer .copyright div p{
+    color: #2e2a21;
+    font-size: 1.5rem;
+}
+footer .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #2e2a21;
+    font-size: 1.5rem;
+}
+footer .social li{
+    display: flex;
+    align-items: center;
+}
+footer .social .socialLogo{
+    height: 1.5rem;
+}
+footer .menu .row h3{
+    color: #40bf40;
+    font-size: 1.5rem;
+    border-block-end: 1px solid #40bf40;
+    text-transform: uppercase;
+}
+footer .menu .row ul li{
+    padding-top: 5px;
+    color: #2e2a21;
+    font-size: 1rem;
+    transition-duration: .2s;
+}
+footer .menu .row .productsLink li{
+    color: #fba02b;
+}
+footer .menu .row ul li:hover{
+    background-color: #2e2a21;
+    color: #fba02b;
+}
+footer .menu .row .productsLink li:hover{
+    background-color: #2e2a21;
+    color: #fba02b;
+}
